@@ -27,6 +27,10 @@ public class euler39 {
         // ToDo: AFTER you write the euler39 function below, you now
         // need to loop over all possible perimeters and call the function,
         // and keeping track of which gives you the maximum value.
+        for (int ii=0; ii<1000; ++ii) {
+            if (euler39(ii) > max_p)
+                max_p = euler39(ii);
+        }
 
         System.out.println("Answer for optimal under 1000: " + max_p);
 
@@ -46,7 +50,16 @@ public class euler39 {
         int cnt = 0;
 
         // ToDo: your code here
+        for (int a=1; a<p; ++a) {
+            for (int b=a; b<p; ++b) {
+                int c = (int) p - a - b;
+                if (((a*a) + (b*b) == (c*c)) && (a+b+c == p)) {
+                    ++cnt;
+                }
+            }
+        }
         
+        System.out.println(p + ": " + cnt);
         return cnt;    
     }
     
