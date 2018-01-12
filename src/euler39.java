@@ -9,7 +9,7 @@
  * {20,48,52}, {24,45,51}, {30,40,50}
  * For which value of p ≤ 1000, is the number of solutions maximised?
  *
- * Answer: ________  <== You fill in (you can check on Euler Project)
+ * Answer: ___840_____  <== You fill in (you can check on Euler Project)
 */
 
 public class euler39 {
